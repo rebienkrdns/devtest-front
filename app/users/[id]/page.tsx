@@ -36,6 +36,9 @@ export default async function UserPage({ params }: UserPageProps) {
           User profile
         </p>
         <h1 className="mt-2 text-4xl font-bold tracking-tight">{user.name}</h1>
+        <p className="mt-3 text-sm font-medium text-slate-500 dark:text-slate-400">
+          User ID: {user.id}
+        </p>
         <a
           className="mt-4 block text-base text-slate-600 underline decoration-slate-300 underline-offset-4 hover:text-indigo-600 dark:text-slate-400 dark:decoration-slate-700 dark:hover:text-indigo-400"
           href={`mailto:${user.email}`}
