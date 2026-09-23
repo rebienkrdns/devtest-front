@@ -25,7 +25,12 @@ export default async function UsersPage() {
 
         <ul className="grid gap-3 sm:grid-cols-2" aria-label="Users list">
           {users.map((user) => (
-            <UserItem key={user.id} name={user.name} email={user.email} />
+            <UserItem
+              key={user.id}
+              id={user.id}
+              name={user.name}
+              email={user.email}
+            />
           ))}
         </ul>
       </section>
